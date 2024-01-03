@@ -1,0 +1,25 @@
++------------------+
+| Timezone do país |
++------------------+
+	01 - Configurar com o Timezone do país
+		America/Sao_Paulo
+		@PostConstruct
+		#Locale
+
+*** Na configuração do Locale ***
+
+Substitua as propriedades:
+
+
+
+
+Pela novas propriedades:
+
+spring.web.locale-resolver=fixed
+spring.web.locale=pt_BR
+
+As propriedades apresentadas em aula estão em processo de depreciação.
+Isso indica que em uma versão futura do Sprig Boot podem não estar mais
+disponíveis para o uso. Por isso, a substituição é indicada.
+
+
